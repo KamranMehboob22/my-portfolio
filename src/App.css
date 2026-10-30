@@ -2,7 +2,10 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #f8f9fa; /* Light gray background */
+  background-color: #f8f9fa;
+  min-height: 100vh; /* Add this */
+  display: flex;     /* Add this */
+  flex-direction: column; /* Add this */
 }
 
 /* Style the Logo */
