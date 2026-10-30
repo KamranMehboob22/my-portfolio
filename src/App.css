@@ -1,0 +1,358 @@
+/* Reset default browser margins */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa; /* Light gray background */
+}
+
+/* Style the Logo */
+.logo p {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  color: #333;
+}
+
+/* Style the Navbar */
+nav.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: white; /* White navbar */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* A subtle shadow */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+   position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Style the Links */
+ul {
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect on links */
+a:hover {
+  color: #007bff; /* Blue when you hover over it */
+}
+
+/* Fix for the navbar covering section titles */
+.section {
+  scroll-margin-top: 100px; 
+}
+
+/* --- HERO SECTION STYLES --- */
+/* 1. Make the hero take up most of the screen height */
+.hero {
+  min-height: 80vh; /* 80% of the viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  background: linear-gradient(
+    135deg,
+    #f8f9fa 0%,
+    #e9ecef 100%
+  ); /* Subtle gradient */
+}
+
+/* 2. Make the main heading huge */
+.hero h1 {
+  font-size: 56px;
+  color: #222;
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+}
+
+/* 3. Make the paragraph readable */
+.hero p {
+  font-size: 22px;
+  color: #666;
+  max-width: 600px;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+/* 4. Style the button */
+.cta-button {
+  padding: 15px 40px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: #007bff; /* Blue button */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3); /* Glow effect */
+}
+
+/* Button hover effect */
+.cta-button:hover {
+  background-color: #0056b3; /* Darker blue */
+  transform: translateY(-3px); /* Moves up slightly */
+  box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
+}
+/* --- SKILLS SECTION STYLES --- */
+
+/* The main container for the whole section */
+
+.skills-section {
+  padding: 80px 20px;
+  background-color: #ffffff; /* White background */
+  text-align: center;
+}
+
+/* The title "My Skills" */
+.skills-section h2 {
+  font-size: 36px;
+  color: #222;
+  margin-bottom: 50px;
+  position: relative;
+  display: inline-block;
+}
+/* A nice little underline for the title */
+.skills-section h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50%;
+  height: 4px;
+  background-color: #007bff; /* Blue underline */
+  bottom: -15px;
+  left: 30%;
+  border-radius: 2px;
+}
+/* The Grid layout for the cards */
+.skills-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Individual Card Styles */
+.skill-card{
+background-color: #f8f9fa;
+border: 1px solid #e9ecef;
+border-radius: 20px;
+width: 280px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+/* Hover effect for the cards */
+.skill-card:hover {
+  transform: translateY(-8px); /* Lifts the card up */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1); /* Makes the shadow bigger */
+  border-color: #007bff;
+}
+
+.skill-card h3 {
+  font-size: 22px;
+  color: #007bff; /* Blue title */
+  margin-bottom: 15px;
+}
+
+.skill-card p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* --- PROJECTS SECTION STYLES --- */
+
+.projects-section{
+padding: 80px 20px;
+background-color:#f8f9fa;
+text-align:center;
+}
+.projects-section h2{
+  font-size:36px;
+  color:#222;
+  margin-bottom:50px;
+  position:relative;
+  display:inline-block;
+}
+.projects-section h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #007bff;
+  margin: 15px auto 0;
+  border-radius: 2px;
+}
+.projects-grid{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:30px;
+  max-width:1200px;
+  margin:0 auto;
+}
+.project-card{
+  background-color:#fff;
+  border:1px solid #e9ecef;
+  border-radius:12px;
+  text-align:center;
+  width:400px;
+  box-shadow:0 4px 6px rgba(0,0,0,0.1);
+  transition:transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+.project-card h3 {
+
+  font-size: 24px;
+  color: #222;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.project-card p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.project-tech {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-tech span {
+  background-color: #e6f2ff;
+  color: #007bff;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.project-btn {
+  display: inline-block;
+  background-color: #222;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.project-btn:hover {
+  background-color: #007bff;
+}
+
+
+/* --- CONTACT SECTION STYLES --- */
+
+.contact-section {
+  padding: 80px 20px;
+  background-color: white;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 36px;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.contact-section h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #007bff;
+  margin: 15px auto 0;
+  border-radius: 2px;
+}
+
+.contact-subtitle {
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+/* Footer Styles */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #333; /* Dark footer */
+  color: white;
+  position: fixed; /* Keeps the footer at the bottom of the screen */
+  bottom: 0;
+  width: 100%;
+}
+
+
+
+footer p {
+  margin: 0;
+}
