@@ -14,7 +14,7 @@ const Projects = () => {
               <span>CSS</span>
               <span>Vite</span>
             </div>
-            <a href="YOUR_VERCEL_LINK_HERE" target="_blank" rel="noreferrer" className="project-btn">
+            <a href="https://todo-app-six-vert-76.vercel.app/" target="_blank" rel="noreferrer" className="project-btn">
               View Live App
             </a>
           </div>
